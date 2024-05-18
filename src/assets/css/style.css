@@ -11,19 +11,20 @@
 
 body {
   background: #fff;
-  color: #2f3138;
+  color: black;
   font-family: "Open Sans", sans-serif;
 }
 
 a {
-  color: #f82249;
+  color: gold;
   transition: 0.5s;
 }
 
-a:hover,
+
+\a:hover,
 a:active,
 a:focus {
-  color: #f8234a;
+  color: goldenrod;
   outline: none;
   text-decoration: none;
 }
@@ -43,7 +44,7 @@ h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
-  color: #0e1b4d;
+  color: black;
 }
 
 .main-page {
@@ -72,7 +73,7 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #f82249;
+  background: gold;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -89,13 +90,13 @@ h6 {
 }
 
 .back-to-top:focus {
-  background: #e0072f;
+  background: goldenrod;
   color: #fff;
   outline: none;
 }
 
 .back-to-top:hover {
-  background: #e0072f;
+  background: goldenrod;
   color: #fff;
 }
 
@@ -114,7 +115,7 @@ h6 {
   display: block;
   width: 60px;
   height: 5px;
-  background: #f82249;
+  background: gold;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -158,7 +159,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-fixed {
-  background: rgba(6, 12, 34, 0.98);
+  background: black;
   height: 70px;
   padding: 15px 0;
   transition: all 0.5s;
@@ -176,7 +177,7 @@ h6 {
 }
 
 #header #logo h1 span {
-  color: #f82249;
+  color: gold;
 }
 
 #header #logo h1 a,
@@ -289,7 +290,7 @@ h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #f82249;
+  background-color: gold;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -303,10 +304,10 @@ h6 {
 
 .nav-menu li.buy-tickets a {
   color: #fff;
-  background: #f82249;
+  background: gold;
   padding: 7px 22px;
   border-radius: 50px;
-  border: 2px solid #f82249;
+  border: 2px solid gold;
   transition: all ease-in-out 0.3s;
   font-weight: 500;
   margin-left: 8px;
@@ -347,7 +348,7 @@ h6 {
 }
 
 .nav-menu ul li:hover > a {
-  background: #f82249;
+  background: gold;
   color: #fff;
 }
 
@@ -384,7 +385,7 @@ h6 {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: rgba(6, 12, 34, 0.9);
+  background: black;
   left: -260px;
   width: 260px;
   overflow-y: auto;
@@ -414,7 +415,7 @@ h6 {
 }
 
 #mobile-nav ul li a:hover {
-  color: #f82249;
+  color: gold;
 }
 
 #mobile-nav ul li li {
@@ -431,11 +432,11 @@ h6 {
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #f82249;
+  color: gold;
 }
 
 #mobile-nav ul .menu-item-active {
-  color: #f82249;
+  color: gold;
 }
 
 #mobile-body-overly {
@@ -445,7 +446,7 @@ h6 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(6, 12, 34, 0.8);
+  background: black;
   display: none;
 }
 
@@ -478,7 +479,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro:before {
   content: "";
-  background: rgba(6, 12, 34, 0.8);
+  background: black;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -518,7 +519,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro h1 span {
-  color: #f82249;
+  color: gold;
 }
 
 #intro p {
@@ -530,7 +531,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#f82249 50%, rgba(101, 111, 150, 0.15) 52%);
+  background: radial-gradient(gold 50%, rgba(101, 111, 150, 0.15) 52%);
   border-radius: 50%;
   display: block;
   position: relative;
@@ -577,7 +578,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .play-btn:hover::after {
-  border-left: 15px solid #f82249;
+  border-left: 15px solid gold;
   -webkit-transform: scale(20);
   transform: scale(20);
 }
@@ -615,11 +616,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #f82249;
+  border: 2px solid gold;
 }
 
 #intro .about-btn:hover {
-  background: #f82249;
+  background: gold;
   color: #fff;
 }
 
@@ -666,7 +667,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+  background: black;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -710,7 +711,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #speakers .speaker .details {
-  background: rgba(6, 12, 34, 0.76);
+  background: black;
   position: absolute;
   left: 0;
   bottom: -30px;
@@ -743,7 +744,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #speakers .speaker .details a:hover {
-  color: #f82249;
+  color: gold;
 }
 
 #speakers .speaker:hover .details {
@@ -755,7 +756,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #speakers-details .details h2 {
-  color: #112363;
+  color: black;
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -767,7 +768,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #speakers-details .details .social a {
   background: #e9edfb;
-  color: #112363;
+  color: black;
   line-height: 1;
   display: inline-block;
   text-align: center;
@@ -778,7 +779,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #speakers-details .details .social a:hover {
-  background: #f82249;
+  background: gold;
   color: #fff;
 }
 
@@ -787,7 +788,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #speakers-details .details p {
-  color: #112363;
+  color: black;
   font-size: 15px;
   margin-bottom: 10px;
 }
@@ -817,13 +818,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: none;
   border-radius: 50px;
   font-weight: 600;
-  background-color: #0e1b4d;
+  background-color: black;
   color: #fff;
   padding: 10px 100px;
 }
 
 #schedule .nav-tabs a.active {
-  background-color: #f82249;
+  background-color: gold;
   color: #fff;
 }
 
@@ -918,7 +919,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #venue .venue-info:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+  background: black;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -992,11 +993,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #hotels a {
-  color: #152b79;
+  color: black;
 }
 
 #hotels a:hover {
-  color: #f82249;
+  color: gold;
 }
 
 #hotels .stars {
@@ -1046,7 +1047,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #gallery .owl-dot.active {
-  background-color: #f82249;
+  background-color: gold;
 }
 
 #gallery .gallery-carousel .owl-stage-outer {
@@ -1054,7 +1055,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #gallery .gallery-carousel .center {
-  border: 6px solid #f82249;
+  border: 6px solid gold;
   margin: -10px;
   box-sizing: content-box;
   padding: 4px;
@@ -1143,7 +1144,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #faq #faq-list a.collapse {
-  color: #f82249;
+  color: gold;
 }
 
 #faq #faq-list a.collapsed {
@@ -1168,7 +1169,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #subscribe:before {
   content: "";
-  background: rgba(6, 12, 34, 0.6);
+  background: black;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1196,7 +1197,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 0;
   padding: 9px 25px;
   cursor: pointer;
-  background: #f82249;
+  background: gold;
   color: #fff;
   transition: all 0.3s ease;
   outline: none;
@@ -1205,7 +1206,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #subscribe button:hover {
-  background: #e0072f;
+  background: goldenrod;
 }
 
 /*--------------------------------------------------------------
@@ -1220,11 +1221,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: none;
   border-radius: 5px;
   transition: all  0.3s ease-in-out;
-  box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+  box-shadow: 0 10px 25px 0 black;
 }
 
 #buy-tickets .card:hover {
-  box-shadow: 0 10px 35px 0 rgba(6, 12, 34, 0.2);
+  box-shadow: 0 10px 35px 0 black;
 }
 
 #buy-tickets .card hr {
@@ -1256,13 +1257,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 50px;
   padding: 10px 40px;
   transition: all 0.2s;
-  background-color: #f82249;
+  background-color: gold;
   border: 0;
   color: #fff;
 }
 
 #buy-tickets .card .btn:hover {
-  background-color: #e0072f;
+  background-color: goldenrod;
 }
 
 #buy-tickets #buy-ticket-modal input,
@@ -1275,15 +1276,27 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 50px;
   padding: 10px 40px;
   transition: all 0.2s;
-  background-color: #f82249;
+  background-color: gold;
   border: 0;
   color: #fff;
 }
 
 #buy-tickets #buy-ticket-modal .btn:hover {
-  background-color: #e0072f;
+  background-color: goldenrod;
 }
-
+.view{
+  font-size: 15px;
+  border-radius: 50px;
+  padding: 10px 40px;
+  transition: all 0.2s;
+  background-color: gold;
+  border: 0;
+  color: #111;
+  
+  position: relative;
+  /* top: 50%; */
+  left: 45%;
+}
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
@@ -1301,13 +1314,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: #f82249;
+  color: gold;
 }
 
 #contact .contact-info address,
 #contact .contact-info p {
   margin-bottom: 0;
-  color: #112363;
+  color: black;
 }
 
 #contact .contact-info h3 {
@@ -1315,7 +1328,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 15px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #112363;
+  color: black;
 }
 
 #contact .contact-info a {
@@ -1323,7 +1336,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .contact-info a:hover {
-  color: #f82249;
+  color: gold;
 }
 
 #contact .contact-address,
@@ -1333,8 +1346,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form #sendmessage {
-  color: #f82249;
-  border: 1px solid #f82249;
+  color: gold;
+  border: 1px solid gold;
   display: none;
   text-align: center;
   padding: 15px;
@@ -1375,7 +1388,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
-  background: #f82249;
+  background: gold;
   border: 0;
   padding: 10px 40px;
   color: #fff;
@@ -1385,7 +1398,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"]:hover {
-  background: #e0072f;
+  background:black ;
 }
 
 /*--------------------------------------------------------------
@@ -1393,14 +1406,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #footer {
-  background: #101522;
+  background: black;
   padding: 0 0 25px 0;
   color: #eee;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #040919;
+  background: black;
   padding: 60px 0 30px 0;
 }
 
@@ -1434,7 +1447,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #222636;
+  background: black;
   color: #eee;
   line-height: 1;
   padding: 8px 0;
@@ -1447,7 +1460,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #f82249;
+  background: gold;
   color: #fff;
 }
 
@@ -1458,7 +1471,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
-  border-bottom: 2px solid #f82249;
+  border-bottom: 2px solid gold;
 }
 
 #footer .footer-top .footer-links {
@@ -1473,12 +1486,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 5px;
-  color: #f82249;
+  color: gold;
   font-size: 18px;
 }
 
 #footer .footer-top .footer-links ul li {
-  border-bottom: 1px solid #262c44;
+  border-bottom: 1px solid #121315;
   padding: 10px 0;
 }
 
@@ -1491,7 +1504,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #f82249;
+  color: gold;
 }
 
 #footer .footer-top .footer-contact {
@@ -1513,7 +1526,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-newsletter input[type="submit"] {
-  background: #f82249;
+  background: gold;
   border: 0;
   width: 35%;
   padding: 6px 0;
@@ -1524,7 +1537,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-newsletter input[type="submit"]:hover {
-  background: #e0072f;
+  background: goldenrod;
 }
 
 #footer .copyright {
@@ -1593,7 +1606,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 991px) {
   #header {
-    background: rgba(6, 12, 34, 0.98);
+    background: black;
     height: 70px;
     padding: 15px 0;
     transition: all 0.5s;
