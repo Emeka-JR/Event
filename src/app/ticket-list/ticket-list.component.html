@@ -1,0 +1,142 @@
+<br><br><br><br>
+<!-- 
+<div class="container">
+  <div class="row" *ngFor="let rowIndex of [0, 1, 2, 3, 4]">
+    <div class="col-lg-4" *ngFor="let colIndex of [0, 1, 2]">
+      <div class="card mb-5 mb-lg-0">
+        <div class="card-body">
+          <h5 class="card-title text-muted text-uppercase text-center">{{ collection[rowIndex * 3 + colIndex].title }}</h5>
+          <h6 class="card-price text-center">${{ collection[rowIndex * 3 + colIndex].price }}</h6>
+          <hr>
+          <ul class="fa-ul">
+            <li *ngFor="let feature of collection[rowIndex * 3 + colIndex].features">
+              <span class="fa-li">
+                <i class="fa" [ngClass]="feature.available ? 'fa-check' : 'fa-times'"></i>
+              </span>
+              <span [ngClass]="{ 'text-muted': !feature.available }">{{ feature.text }}</span>
+            </li>
+          </ul>
+          <hr>
+          <div class="text-center">
+            <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" [attr.data-ticket-type]="collection[rowIndex * 3 + colIndex].ticketType">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- Modal Order Form -->
+<!-- <div id="buy-ticket-modal" class="modal fade">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Buy Tickets</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="POST" action="#">
+          <div class="form-group">
+            <input type="text" class="form-control" name="your-name" placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="your-email" placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <select id="ticket-type" name="ticket-type" class="form-control">
+              <option value="">-- Select Your Ticket Type --</option>
+              <option *ngFor="let item of collection" [value]="item.ticketType">{{ item.title }}</option>
+            </select>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn">Buy Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container">
+  <app-search (searchTextChanged)="setSearchText($event)"></app-search>
+  <div class="row">
+    <div class="col-lg-4" *ngFor="let item of paginatedItems">
+      <div class="card mb-5 mb-lg-0">
+        <div class="card-body">
+          <h5 class="card-title text-muted text-uppercase text-center">{{ item.title }}</h5>
+          <h6 class="card-price text-center">${{ item.price }}</h6>
+          <hr>
+          <ul class="fa-ul">
+            <li *ngFor="let feature of item.features">
+              <span class="fa-li">
+                <i class="fa" [ngClass]="feature.available ? 'fa-check' : 'fa-times'"></i>
+              </span>
+              <span [ngClass]="{ 'text-muted': !feature.available }">{{ feature.text }}</span>
+            </li>
+          </ul>
+          <hr>
+          <div class="text-center">
+            <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" [attr.data-ticket-type]="item.ticketType">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pagination Controls -->
+  <div class="row">
+    <div class="col-12">
+      <nav>
+        <ul class="pagination justify-content-center">
+          <li class="page-item" [ngClass]="{'disabled': currentPage === 1}">
+            <a class="page-link" (click)="setPage(currentPage - 1)" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item" *ngFor="let page of [].constructor(totalPages); let i = index" [ngClass]="{'active': currentPage === i + 1}">
+            <a class="page-link" (click)="setPage(i + 1)">{{ i + 1 }}</a>
+          </li>
+          <li class="page-item" [ngClass]="{'disabled': currentPage === totalPages}">
+            <a class="page-link" (click)="setPage(currentPage + 1)" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Order Form -->
+<div id="buy-ticket-modal" class="modal fade">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Buy Tickets</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="POST" action="#">
+          <div class="form-group">
+            <input type="text" class="form-control" name="your-name" placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="your-email" placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <select id="ticket-type" name="ticket-type" class="form-control">
+              <option value="">-- Select Your Ticket Type --</option>
+              <option *ngFor="let item of collection" [value]="item.ticketType">{{ item.title }}</option>
+            </select>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn">Buy Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

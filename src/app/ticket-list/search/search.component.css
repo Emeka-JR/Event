@@ -1,0 +1,27 @@
+.search-ticket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.search-ticket-input{
+    width: 300px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease-out;
+    background-color: black;
+    color: white;
+}
+.search-ticket-input:focus{
+    border-color: #ffba00;
+}
+.search-ticket button{
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border-color: #ffba00;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-out;
+}
