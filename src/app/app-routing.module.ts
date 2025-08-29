@@ -4,13 +4,15 @@ import { HomeComponent } from './home/home.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { TicketListComponent } from './ticket-list/ticket-list.component';
 import { EventsComponent } from './events/events.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'Home',component:HomeComponent},
   {path:'Details',component:ProductDetailsComponent},
   {path:'tickets',component:TicketListComponent},
-  {path:'events',component:EventsComponent}
+  {path:'events',component:EventsComponent},
+  {path: 'dashboard',component:DashboardComponent}
 ];
 
 @NgModule({

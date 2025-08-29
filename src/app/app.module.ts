@@ -12,6 +12,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { EventsComponent } from './events/events.component';
 import { SearchComponent } from './ticket-list/search/search.component';
 import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,15 @@ import { FormsModule } from '@angular/forms';
     ProductDetailsComponent,
     TicketListComponent,
     EventsComponent,
-    SearchComponent
+    SearchComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgxPaginationModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

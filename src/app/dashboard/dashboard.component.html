@@ -1,0 +1,10 @@
+<div class="dashboard-item-container">
+    <div class="task-item"  *ngFor="let task of allTasks">
+        <div class="task-title">
+            <h3>{{task.subject}}</h3>
+        </div>
+        <p><b>Name: </b>{{task.name}}</p>
+        <p><b>Email: </b>{{task.email}}</p>
+        <p><b>Message: </b>{{task.message}}</p>
+    </div>
+</div>
